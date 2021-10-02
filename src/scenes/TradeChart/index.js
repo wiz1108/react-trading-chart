@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import binance from 'node-binance-api';
 import { Container, Row, Col } from 'reactstrap';
 import './styles.css';
-import HorizontalTabList from '../../components/HorizontalTabList';
-import InfoPanel from '../../components/InfoPanel';
+// import HorizontalTabList from '../../components/HorizontalTabList';
+// import InfoPanel from '../../components/InfoPanel';
 import Chart from '../../components/Chart';
 
 export default class TradeChart extends Component {
@@ -19,7 +19,7 @@ export default class TradeChart extends Component {
 
   state = {
     cryptoList: [],
-    selectedCrypto: { symbol: 'ETHBTC', baseAsset: 'ETH', quoteAsset: 'BTC'},
+    selectedCrypto: { symbol: 'ETHBTC', baseAsset: 'ETH', quoteAsset: 'BTC' },
     quantity: 0,
     currentPrice: 0,
     boughtPrice: 0,
